@@ -1,0 +1,181 @@
+<html>
+ <head>
+    <meta charset = "utf-8">
+    <title>사이트 찾아가기</title>
+</head>
+<body>
+    <style> /* 검색창 css부분*/
+    button.img-button{
+        border: none;
+        background: transparent;
+        font-size: 1.125rem;
+}
+.fas{
+    color: black;
+}
+
+.keyword{
+    border : none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background : transparent;
+    width: 150px;
+    color: black;
+    font-size : 1.063rem;
+    font-style: "Malgun Gothic";
+    opacity: 0;
+    transition: 0.4S;
+}
+
+select{
+    border: none;
+    outline: none;
+    width: 80px;
+    font-size: 1.125rem;
+    font-weight: 200;
+    background: transparent;
+    color: black;
+    opacity: 0;
+    transition: 0.4S;
+}
+
+select option{
+    background-color: white;
+}
+
+.search:hover > .keyword{
+    opacity: 1;
+}
+.search:hover > select{
+    opacity: 1;
+}
+    </style> <!-- 검색창 제작 부분 -->
+    <div>
+    <h1> 위치 찾아가기<img src="화살표.png" alt="화살표" width="80" height="50" /></h1>
+        <form class='search'>
+            <button class = "img-button" type ="submit" name = "click" value = "">
+                <i class="fas fa-search"></i>
+                <script src="https://kit.fontawesome.com/52039284cf.js" crossorigin="anonymous"></script>
+            </button>
+
+            <input class='keyword' type = 'text' name='search' maxlength = 255 value="" autocomplete="off">
+
+            <select class = 'SelectSearch' name='WhichSearch'>
+                <option id = 'google' value = 'google'>Google</option>
+                <option id = 'naver' value = 'naver'>Naver</option>
+            </select>
+        </form>
+    </div>
+    <div> <!-- 사이트 별로 구분한 뒤 표를 만들어 모아놓은 부분 -->
+      <ul>
+        <li><h3>포탈사이트</h3></li>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><a href="https://www.naver.com/" target="_blank"><img src="naver.png" alt="naver" width="190" height="120"/></a></td>
+                    <td><a href="https://www.daum.net/" target="_blank"><img src="Daum.jpg" alt="Daum" width="190" height="120"/></a></td>
+                    <td><a href="https://www.google.co.kr/" target="_blank"><img src="Google.png" alt="Google" width="190" height="120"/></a></td>
+                    <td><a href="https://www.nate.com/" target="_blank"><img src="Nate.jpg" alt="Nate" width="190" height="120"/></a></td>
+                    <td><a href="https://www.tistory.com/" target="_blank"><img src="Tistory.jpg" alt="Tistory" width="190" height="120"/></a></td>
+                    <td><a href="https://zum.com/" target="_blank"><img src="Zum.jpg" alt="Zum" width="190" height="120"/></a></td>
+                    <td><a href="http://www1.dreamwiz.com/" target="_blank"><img src="DreamWiz.jpg" alt="DreamWiz" width="190" height="120"/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://www1.dreamwiz.com/" target="_blank"><img src="DreamWiz.jpg" alt="DreamWiz" width="190" height="120"/></a></td>
+                    <td><a href="https://www.lycos.com/" target="_blank"><img src="LYCos.png" alt="LYCos" width="190" height="120"/></a></td>
+                </tr>
+                </tbody> 
+        </table>
+        <li><h3>쇼핑사이트</h3></li>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><a href="https://www.gmarket.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110145155261.png" alt="G마켓" /></a></td>
+                    <td><a href="http://www.auction.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110925001572.png" alt="AUCTION" /></a></td>
+                    <td><a href="https://www.11st.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110931464771.png" alt="11번가" /></a></td>
+                    <td><a href="http://shinsegaemall.ssg.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110935007521.png" alt="신세계몰" /></a></td>
+                    <td><a href="http://www.lotteimall.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110941063221.png" alt="롯데홈쇼핑" /></a></td>
+                    <td><a href="https://www.gsshop.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110939110081.png" alt="GS shop" /></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.oliveyoung.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902111007009012.png" alt="올리브영" /></a></td>
+                    <td><a href="http://emart.ssg.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110936211621.png" alt="이마트몰" /></a></td>
+                    <td><a href="http://display.cjmall.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110942034191.png" alt="cjmallr" /></a></td>
+                    <td><a href="https://www.hyundaihmall.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110943381631.png" alt="현대Hmall" /></a></td>
+                    <td><a href="https://www.g9.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110929038381.png" alt="G9" /></a></td>
+                    <td><a href="https://sonyunara.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902111005074181.png" alt="소녀나라" /></a></td>
+                </tr>
+                </tbody> 
+        </table>
+        <li><h3>뉴스사이트</h3></li>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><a href="http://www.wowtv.co.kr/" target="_blank"><img src="https://s.pstatic.net/static/newsstand/2020/logo/dark/0604/215.png" alt="한국경제" width="190" height="120"/></a></td>
+                    <td><a href="http://www.chosun.com/" target="_blank"><img src="조선일보.jpg" alt="조선일보" width="190" height="120"/></a></td>
+                    <td><a href="http://jtbc.joins.com/" target="_blank"><img src="JTBC.jpg" alt="JTBC""  width="190" height="120"/></a></td>
+                    <td><a href="https://joongang.joins.com/" target="_blank"><img src="중앙일보.jpg" alt="중앙일보" width="190" height="120"/></a></td>
+                    <td><a href="https://www.ytn.co.kr/" target="_blank"><img src="YTN.jpg"" alt="YTN" width="190" height="120"/></a></td>
+                    <td><a href="https://www.hankookilbo.com/" target="_blank"><img src="한국일보.png" alt="한국일보" width="190" height="120"/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.yna.co.kr/" target="_blank"><img src="연합뉴스.jpg" alt="연합뉴스" width="190" height="120"/></a></td>
+                    <td><a href="http://news.kbs.co.kr/" target="_blank"><img src="KBS.jpg" alt="KBS" width="190" height="120"/></a></td>
+                    <td><a href="https://imnews.imbc.com/" target="_blank"><img src="MBC.png" alt="MBC" width="190" height="120"/></a></td>
+                    <td><a href="https://news.sbs.co.kr/" target="_blank"><img src="SBS.png" alt="SBS" width="190" height="120"/></a></td>
+                    <td><a href="http://www.dt.co.kr/" target="_blank"><img src="디지털타임스.png" alt="디지털타임스" width="190" height="120"/></a></td>
+                    <td><a href="https://www.sbs.co.kr/tv/sports" target="_blank"><img src="SBS스포츠.jpg"" alt="SBS스포츠" width="190" height="120"/></a></td>
+                </tr>
+                </tbody> 
+        </table>
+        <li><h3>서점사이트</h3></li>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><a href="http://www.yes24.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110946411651.png" alt="Yes24"" /></a></td>
+                    <td><a href="http://www.ypbooks.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902111008540691.png" alt="영풍문고" /></a></td>
+                    <td><a href="https://www.aladin.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110948112931.png" alt="알라딘" /></a></td>
+                    <td><a href="http://www.kyobobook.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110949268731.png" alt="교보문고" /></a></td>
+                    <td><a href="https://mbook.interpark.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110950434111.png" alt="인터파크도서" /></a></td>
+                    <td><a href="http://www.bandinlunis.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/shopping//shopping_201902110953172581.png" alt="반디앤루니스" /></a></td>
+                </tr>
+                </tbody> 
+        </table>
+        <li><h3>기타</h3></li>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><a href="http://www.cgv.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/coupon//coupon_202004170720571481.jpg" alt="CGV" /></a></td>
+                    <td><a href="https://www.lottecinema.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/coupon//coupon_202004020439486321.png" alt="롯데시네마" /></a></td>
+                    <td><a href="https://www.megabox.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/coupon//coupon_202004020441360621.png" alt="메가박스" /></a></td>
+                    <td><a href="https://www.genie.co.kr/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/coupon//coupon_202004020456448011.png" alt="지니뮤직" /></a></td>
+                    <td><a href="https://www.melon.com/" target="_blank"><img src="https://cdnimg.melon.co.kr/resource/image/web/common/logo_melon142x99.png" width="190" height="120" alt="멜론" /></a></td>
+                    <td><a href="https://www.toomics.com/" target="_blank"><img src="https://image.cultureland.co.kr/upload//web/coupon//coupon_202004020459573901.png" alt="투믹스" /></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="youtube" width="190" height="120"/></a></td>
+                    <td><a href="https://www.facebook.com/" target="_blank"><img src="facebook.jpg" alt="facebook" width="190" height="120" /></a></td>
+                    <td><a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="instagram" width="190" height="120"/></a></td>
+                    <td><a href="https://www.twitch.tv/" target="_blank"><img src="Twitch.jpg" alt="Twitch" width="190" height="120"/></a></td>
+                    <td><a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="twitter" width="190" height="120"/></a></td>
+                    <td><a href="https://www.netflix.com/kr/" target="_blank"><img src="NETFLI.png" alt="넷플릭스" width="190" height="120"/></a></td>
+                </tr>
+                </tbody> 
+        </table>
+    </ul>  
+    </div>
+    <div>
+       <tfoot>
+           <hr>
+        <tr rowspan="3">
+            <td colspan="3">
+            개발자 = 1113 양진혁
+            </td>
+        </tr>
+    </tfoot> 
+    </div> 
+    <script src="./index.js"></script>
+    <script src="./index.css"></script>
+</body>  
+
+</html>
